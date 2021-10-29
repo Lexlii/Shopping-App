@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
-import { AntDesign } from "@expo/vector-icons";
+
 
 export default function Login(params) {
   const navigation = params.navigation;
@@ -16,46 +16,43 @@ export default function Login(params) {
     >
       <Image
         style={{
-          transform: [{ rotate: "45deg" }],
           borderRadius: 20,
-          marginBottom: 60,
+          marginBottom: 20,
+          marginTop: -180,
           width: 200,
           height: 200,
         }}
         source={{
-          uri: "https://images.unsplash.com/photo-1633114127188-99b4dd741180?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+          uri: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29tcHV0ZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         }}
       />
-      <Text style={{ fontSize: 30, color: "grey" }}>Welcome to</Text>
-      <Text style={{ fontSize: 40, fontWeight: "bold" }}>Power Bike Shop</Text>
-      {/* <View style={{}}>
+      <Text style={{ fontSize: 30, fontWeight: "bold", color: "grey", marginBottom:20, }}>TECHNOKING</Text>
+      <View style={{width: '70%'}}>
         <TextInput
           style={{
-            padding: 15,
-            borderRadius: 10,
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            borderRadius: 5,
             borderWidth: 0.7,
             paddingHorizontal: 60,
+            marginBottom:10,
           }}
-          placeholder="Enter your username"
+          placeholder="Username"
         />
-      </View> */}
-      {/* <View style={{ marginTop: 10,}}>
+      </View> 
+      <View style={{ marginTop: 10, width: '70%'}}>
         <TextInput
-          secureTextEntry={true}
-          onChangeText={(
-            e
-          )=> {
-            console.log(e)
-          }}
           style={{
-            padding: 15,
-            borderRadius: 10,
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            borderRadius: 5,
             borderWidth: 0.7,
             paddingHorizontal: 60,
+            marginBottom:60,
           }}
-          placeholder="Enter your password"
+          placeholder="Password"
         />
-      </View> */}
+      </View> 
       <TouchableOpacity
         onPress={() => {
           navigation.navigate("Home");
@@ -65,13 +62,12 @@ export default function Login(params) {
           paddingHorizontal: 80,
           marginTop: 10,
           alignItems: "center",
-          borderRadius: 10,
+          borderRadius: 28,
           flexDirection: "row",
           backgroundColor: "black",
         }}
       >
-        <AntDesign name="apple1" size={24} color="white" />
-        <Text style={{ paddingLeft: 10, color: "white" }}>Login</Text>
+        <Text style={{ color: "white" }}>Login</Text>
       </TouchableOpacity>
     </View>
   );
