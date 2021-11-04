@@ -48,7 +48,20 @@ export default function Login(params) {
             borderRadius: 5,
             borderWidth: 0.7,
             paddingHorizontal: 60,
-            marginBottom:60,
+            marginBottom: 10,
+          }}
+          placeholder="E-mail"
+        />
+      </View> 
+      <View style={{ marginTop: 10, width: '70%'}}>
+        <TextInput
+          style={{
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            borderRadius: 5,
+            borderWidth: 0.7,
+            paddingHorizontal: 60,
+            marginBottom: 60,
           }}
           placeholder="Password"
         />
