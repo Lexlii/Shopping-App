@@ -18,9 +18,9 @@ export default function Login(params) {
         style={{
           borderRadius: 20,
           marginBottom: 20,
-          marginTop: -180,
-          width: 200,
-          height: 200,
+          // marginTop: -180,
+          width: 100,
+          height: 100,
         }}
         source={{
           uri: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29tcHV0ZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
