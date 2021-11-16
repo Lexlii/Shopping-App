@@ -61,10 +61,11 @@ export default function Login(params) {
             borderRadius: 5,
             borderWidth: 0.7,
             paddingHorizontal: 60,
-            marginBottom: 60,
+            marginBottom: 20,
           }}
           placeholder="Password"
         />
+        <Text style={{ fontSize: 12, marginBottom:20, }}>Don't have an account? </Text>
       </View> 
       <TouchableOpacity
         onPress={() => {
@@ -72,10 +73,10 @@ export default function Login(params) {
         }}
         style={{
           padding: 15,
-          paddingHorizontal: 80,
+          paddingHorizontal: 60,
           marginTop: 10,
           alignItems: "center",
-          borderRadius: 28,
+          borderRadius: 18,
           flexDirection: "row",
           backgroundColor: "black",
         }}

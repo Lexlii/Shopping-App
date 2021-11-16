@@ -23,6 +23,9 @@ export default function App() {
             component={Login}
             options={{
               title: "",
+              headerStyle: { 
+                backgroundColor: "green",
+              }
             }}
             />
             <MainNavigator.Screen 
