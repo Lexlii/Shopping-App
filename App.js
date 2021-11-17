@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from "./screens/Login"
 import Home from "./screens/Home"
+import Cart from "./screens/Cart"
 
 const MainNavigator = createStackNavigator();
 
@@ -31,6 +32,13 @@ export default function App() {
             <MainNavigator.Screen 
             name="Home" 
             component={Home}
+            options={{
+              title: "",
+            }} 
+            />
+            <MainNavigator.Screen 
+            name="Cart" 
+            component={Cart}
             options={{
               title: "",
             }} 
