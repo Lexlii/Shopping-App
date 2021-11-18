@@ -25,7 +25,7 @@ export default function App() {
             options={{
               title: "",
               headerStyle: { 
-                backgroundColor: "green",
+                backgroundColor: "#5CDB95",
               }
             }}
             />

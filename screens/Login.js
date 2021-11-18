@@ -18,9 +18,8 @@ export default function Login(params) {
         style={{
           borderRadius: 20,
           marginBottom: 20,
-          // marginTop: -180,
-          width: 100,
-          height: 100,
+          width: 120,
+          height: 120,
         }}
         source={{
           uri: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29tcHV0ZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -65,7 +64,6 @@ export default function Login(params) {
           }}
           placeholder="Password"
         />
-        <Text style={{ fontSize: 12, marginBottom:20, }}>Don't have an account? </Text>
       </View> 
       <TouchableOpacity
         onPress={() => {
@@ -78,10 +76,10 @@ export default function Login(params) {
           alignItems: "center",
           borderRadius: 18,
           flexDirection: "row",
-          backgroundColor: "black",
+          backgroundColor: "#5CDB95",
         }}
       >
-        <Text style={{ color: "white" }}>Login</Text>
+        <Text style={{ color: "black", fontSize: "12", fontWeight: "bold" }}>Login</Text>
       </TouchableOpacity>
     </View>
   );
